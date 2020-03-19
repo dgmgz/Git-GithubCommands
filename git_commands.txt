@@ -3,6 +3,8 @@ GIT & GITHUB COMMANDS
 
 INSTALLATION
 
+-- git init: Start git repo in local
+
 -- git --version : Knowing current git version installed in local disk
 
 CONFIGURATION
