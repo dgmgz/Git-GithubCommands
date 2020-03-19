@@ -1,1 +1,21 @@
+INSTALLATION
+
 git --version : Knowing current git version installed in local disk
+
+CONFIGURATION
+
+The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+git config --global user.name : Set up local configuration related to user
+git config --global user.email: Set up local configuration related to email
+git config --list: Checking Your Settings.
+
+GIT FILES MOVEMENT
+
+git status: Allows us to see the status of all our files and folders. 
+git add: Helps us move files from Untracked or Unstaged to the Staged state. We can use git file-name-or-folder to add individual files and folders or git add -A to move all the files in our project (both Untrackeds and unstageds).
+git reset HEAD: helps us take files out of the Staged state to return them to their previous state. If the files came from Unstaged, they go back there. And the same came from Untracked.
+git commit: helps us move files from Unstaged to Staged. This is a special occasion, the files have been saved or updated in the repository. Git will ask us to leave a message to remember the changes we made and we can use the -m argument to write it (git commit -m "message").
+git rm: This command needs any of the following arguments to be able to execute correctly:
+- git rm --cached: Move the files that we indicate to the Untracked state.
+- git rm --force: Delete Git and hard drive files. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).
