@@ -1,3 +1,6 @@
+GIT COMMANDS DOC
+
+
 INSTALLATION
 
 git --version : Knowing current git version installed in local disk
