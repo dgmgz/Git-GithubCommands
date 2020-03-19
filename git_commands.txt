@@ -29,3 +29,4 @@ GIT BRANCHES
 -- Branch Name: "Fork"
 
 git branch : show all branches along with its associated master
+git merge: command to merge branches into master
