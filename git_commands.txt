@@ -22,3 +22,9 @@ git commit: helps us move files from Unstaged to Staged. This is a special occas
 git rm: This command needs any of the following arguments to be able to execute correctly:
 - git rm --cached: Move the files that we indicate to the Untracked state.
 - git rm --force: Delete Git and hard drive files. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).
+
+
+
+GIT BRANCHES
+
+git branch : show all branches along with its associated master
