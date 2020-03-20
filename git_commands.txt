@@ -40,4 +40,19 @@ GITHUB CONNECTION
 -- git remote add origin https://github.com/dgmgz/git_commands.git
 -- git remote -v: List all remote repos related to dir.
 -- git pull origin master --allow-unrelated-histories (Only the first time, when need to sync first version of repo when creating it in Github.
--- git pull origin master: Bring to local last data of master repo in Github
+-- git pull origin master: Bring to local last data of master repo in Github.
+
+
+GITHUB HTTPS/SSH CONNECTION
+
+/ssh-keygen -t rsa -b 4096 -C "email" : SSH Key generation.
+/eval "$(ssh-agent -s)" Check key server is running correctly. 
+ssh-add -K ~/.ssh/id_rsa : Add created key to local environment
+
+-- git remote -v: Check current connections. In case the current connection is through https is highly recommendable to establish the connection through secured shell (ssh).
+
+-- git remote set-url origin git@github.com:xxx/xxxx.git
+
+
+
+
