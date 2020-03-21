@@ -93,10 +93,10 @@ GIT STASH
 
 
 GIT GREP
--- git grep github -> use the word github
--- git grep -n github–> in which lines use the word github
--- git grep -c github -> how many times use the word github
--- git grep -c “<p>” -> how many times use the <p> tag
+-- git grep github: Use the word github
+-- git grep -n github: In which lines use the word github
+-- git grep -c github: How many times use the word github
+-- git grep -c “<p>”: How many times use the <p> tag
 
 
 GIT SHORTLOG
