@@ -14,9 +14,11 @@ The first thing you should do when you install Git is to set your user name and 
 -- git config --global user.name : Set up local configuration related to user
 -- git config --global user.email: Set up local configuration related to email
 -- git config --list: Checking Your Settings.
+-- git config --global alias. <name> "command (s) _git" Define an alias in git. Example:
+-- git config --global alias.stats "git shortlog -sn --all --no-merges"
 
 
-GIT FILES MOVEMENT
+GIT FILES MOVEMENT AND EDITION
 
 -- git status: Allows us to see the status of all our files and folders. 
 -- git add: Helps us move files from Untracked or Unstaged to the Staged state. We can use git file-name-or-folder to add individual files and folders or git add -A to move all the files in our project (both Untrackeds and unstageds).
@@ -26,6 +28,8 @@ GIT FILES MOVEMENT
 -- git rm --cached: Move the files that we indicate to the Untracked state.
 -- git rm --force: Delete Git and hard drive files. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).
 -- git diff: Check differences among changes executed in commits.
+-- git blame <file_name> To identify who performed some action on the file.
+
 
 
 
@@ -95,6 +99,12 @@ GIT GREP
 -- git grep -c “<p>” -> how many times use the <p> tag
 
 
+GIT SHORTLOG
+
+-- git shortlog -sn It shows us the commit number for each collaborator.
+-- git shortlog -sn --all It shows us the number of commit for each collaborator including those eliminated.
+-- git shortlog -sn --all --no-merges It shows us the number of commits for each collaborator including those eliminated but not including merges
+
 
 OTHER COMMANDS
 
@@ -106,6 +116,7 @@ OTHER COMMANDS
 -- git reset --soft HashDelHEAD keeps what you have in staging there.
 -- git reset --hard HashDelHEAD resets absolutely everything including what you have in staging.
 -- git reflog: Keeps everything done in the project. All logs.
+
 
 README.MD
 
