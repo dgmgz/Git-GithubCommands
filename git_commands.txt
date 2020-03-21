@@ -72,3 +72,13 @@ GIT TAGS
 -- git tag -d + tag name: delete tag locally
 -- git push origin :refs/tags/ tag name : delete tags in Github
 
+
+GIT IGNORE
+
+-- gitignore: https://git-scm.com/docs/gitignore
+
+
+README.MD
+
+Online Editor: https://pandao.github.io/editor.md/en.html
+
