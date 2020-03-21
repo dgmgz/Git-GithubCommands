@@ -78,6 +78,35 @@ GIT IGNORE
 -- gitignore: https://git-scm.com/docs/gitignore
 
 
+GIT STASH
+
+-- git stash: Save the changes that have been made to the file (changes in ustasged)
+-- git stash list: Show available stash (saved changes)
+-- git stash pop: Throws you the last stash you saved and removes it from the stash list
+-- git stash pop stash_index: Throws you the stash selected by the index // the stash are saved from top to bottom (list) therefore the last saved stash will always be from index 0.
+-- git stash drop: Remove the last added stash (stash index 0).
+-- git stash branch BranchName = create a new branch with the last added stash // a previously saved stash is needed // if we go to another branch the stash will continue in staging, they are not overwritten with the checkout, it is as if it were a global staging
+
+
+GIT GREP
+-- git grep github -> use the word github
+-- git grep -n github–> in which lines use the word github
+-- git grep -c github -> how many times use the word github
+-- git grep -c “<p>” -> how many times use the <p> tag
+
+
+
+OTHER COMMANDS
+
+-- git rebase: Merging changes made in parallel branch through a silent and background mode.
+-- git clean --dry-run: Simulates what is to be deleted without deleting
+-- git clean -f: Delete files listed in dry-run execution
+-- git cherry-pick IDCommit: Add previous commit made in one branch to another.
+-- git commit --amend: Sometimes we commit, but it turns out we didn't want to send it because something else was missing. We use git commit --amend, to amend in English is to patch and what it will do is that the changes we made will add it to the previous commit.
+-- git reset --soft HashDelHEAD keeps what you have in staging there.
+-- git reset --hard HashDelHEAD resets absolutely everything including what you have in staging.
+-- git reflog: Keeps everything done in the project. All logs.
+
 README.MD
 
 Online Editor: https://pandao.github.io/editor.md/en.html
